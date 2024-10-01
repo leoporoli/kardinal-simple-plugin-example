@@ -1,3 +1,5 @@
+import copy
+
 REPLACED = "the-text-has-been-replaced"
 
 def create_flow(service_specs: list, deployment_specs: list, flow_uuid, text_to_replace):
