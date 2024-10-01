@@ -2,6 +2,7 @@ import copy
 
 REPLACED = "the-text-has-been-replaced"
 
+
 def create_flow(service_specs: list, deployment_specs: list, flow_uuid, text_to_replace):
     modified_deployment_specs = []
 
@@ -21,6 +22,7 @@ def create_flow(service_specs: list, deployment_specs: list, flow_uuid, text_to_
         "deployment_specs": modified_deployment_specs,
         "config_map": config_map
     }
+
 
 def delete_flow(config_map, flow_uuid):
     print(config_map["original_text"])
